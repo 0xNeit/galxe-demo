@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@razorlabs/m1-wallet-sdk':
-        specifier: ^0.1.7
-        version: 0.1.7
+        specifier: ^0.1.8
+        version: 0.1.8
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -365,8 +365,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@razorlabs/m1-wallet-sdk@0.1.7':
-    resolution: {integrity: sha512-VsIGVoBJvZB7gSUbJDkYfczimQgVTm0PhhvE8YcMp1dxOYiaoBKEqUE1GREtJ9BB60zctcbzynLBah7IvlixEQ==}
+  '@razorlabs/m1-wallet-sdk@0.1.8':
+    resolution: {integrity: sha512-7T8WaSgpuZ2X0B26d6Epo3i0OgeLz0Q0P8xMgiZ/xIEuAf5br3bfla2TD8os/6VsGtsWJ8GSlqse9WFhlDWlqQ==}
 
   '@razorlabs/wallet-standard@0.2.4':
     resolution: {integrity: sha512-Me0WqBF2tO7dYav5gicSAoX0mkZGgGEOWK7x7s7W65lCUrtM4W9zmxXd3zpbmJWdfIb7xLbDGQS6ryxxXqvFGQ==}
@@ -1607,7 +1607,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@razorlabs/m1-wallet-sdk@0.1.7':
+  '@razorlabs/m1-wallet-sdk@0.1.8':
     dependencies:
       '@razorlabs/wallet-standard': 0.2.4
       aptos: 1.21.0
