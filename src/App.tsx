@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -11,11 +12,10 @@ function App() {
   walletRadar.activate();
 
   const adapters = walletRadar.getDetectedWalletAdapters();
-  const adapter = adapters[0];
+  const adapter = adapters.find((a) => a.name === 'Razor Wallet');
 
   const handleConnect = async () => {
     await adapter?.connect();
-    console.log(adapter)
     setConnected(true);
   }
 
@@ -42,7 +42,7 @@ function App() {
           </button>
         ) : (
           <button onClick={() => handleDisconnect()}>
-            {adapter.accounts[0]?.address}
+            {adapter?.accounts[0]?.address}
           </button>
         )}
         <p>
